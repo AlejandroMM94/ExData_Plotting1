@@ -1,4 +1,4 @@
-# Reading y subsetting the data the data
+# Reading y subsetting the data 
 data <- read.table("exdata./household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
 library(dplyr)
 dataset <- filter(data, Date %in% c("1/2/2007","2/2/2007"))
